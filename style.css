@@ -364,6 +364,10 @@ body {
     transform: scale(1.05);
   }
 
+  .footer {
+    height: 71px;
+  }
+
   .footer .container {
     height: 100%;
     display: flex;
