@@ -109,6 +109,10 @@ body {
   background-image: url("/assets/pexels-edmond-dantès-4347368.jpg");
 }
 
+.specialist:nth-of-type(even) {
+  margin-bottom: 0;
+}
+
 .title {
   font-style: normal;
   font-weight: 700;
@@ -171,12 +175,12 @@ body {
 
 .circle {
   position: absolute;
-  width: 38px;
-  height: 38px;
+  width: 22px;
+  height: 22px;
   background: #e07a64;
   border-radius: 50%;
-  top: -19px;
-  left: -19px;
+  top: -11px;
+  left: -11px;
 }
 
 .offer-box {
@@ -184,8 +188,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 335px;
-  height: 335px;
+  width: 250px;
+  height: 250px;
   background: #f1f1f1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -227,6 +231,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  text-align: center;
 }
 
 .fa-brands.fa-instagram,
@@ -234,6 +239,20 @@ body {
   color: #ffffff;
   font-size: 25px;
   margin: 0 5px;
+}
+
+@media screen and (min-width: 380px) {
+  .circle {
+    width: 38px;
+    height: 38px;
+    top: -19px;
+    left: -19px;
+  }
+
+  .offer-box {
+    width: 335px;
+    height: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -294,7 +313,6 @@ body {
 
   .bigger-txt {
     max-width: 577px;
-    flex-wrap: nowrap;
   }
 
   .title {
@@ -316,7 +334,6 @@ body {
 
   .specialist:nth-of-type(even) {
     flex-direction: row-reverse;
-    margin-bottom: 0;
   }
 
   .specialist:nth-of-type(even) .name {
@@ -348,8 +365,8 @@ body {
   }
 
   .offer-box {
-    width: 197px;
-    height: 197px;
+    width: 195px;
+    height: 195px;
     transition: 0.5s;
   }
 
@@ -372,7 +389,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -384,6 +400,6 @@ body {
   }
   .fa-brands.fa-instagram,
   .fa-facebook {
-    margin: 0 0;
+    margin: 0;
   }
 }
